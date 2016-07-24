@@ -1,0 +1,100 @@
+{
+    "beaker": "2",
+    "evaluators": [
+        {
+            "name": "HTML",
+            "plugin": "HTML",
+            "view": {
+                "cm": {
+                    "mode": "htmlmixed"
+                }
+            }
+        },
+        {
+            "name": "JavaScript",
+            "plugin": "JavaScript",
+            "view": {
+                "cm": {
+                    "mode": "javascript",
+                    "background": "#FFE0F0"
+                }
+            },
+            "languageVersion": "ES2015"
+        },
+        {
+            "name": "Clojure",
+            "plugin": "Clojure",
+            "imports": "com.twosigma.beaker.chart.Color\ncom.twosigma.beaker.chart.Filter\ncom.twosigma.beaker.BeakerProgressUpdate\ncom.twosigma.beaker.NamespaceClient",
+            "view": {
+                "cm": {
+                    "mode": "text/x-clojure"
+                }
+            }
+        }
+    ],
+    "cells": [
+        {
+            "id": "markdownF0ba8V",
+            "type": "markdown",
+            "body": [
+                "função mult-square, que multiplica x por 2+x."
+            ],
+            "evaluatorReader": false
+        },
+        {
+            "id": "codetzkYdS",
+            "type": "code",
+            "evaluator": "Clojure",
+            "input": {
+                "body": [
+                    "(defn mult-square [x] (* x (+ 2 x)))",
+                    "(mult-square 2)"
+                ]
+            },
+            "output": {
+                "state": {},
+                "result": 8,
+                "selectedType": "Text",
+                "pluginName": "Clojure",
+                "shellId": "4b8bc2a2-8504-4031-a0b3-796c7b59e577",
+                "elapsedTime": 43,
+                "height": 56
+            },
+            "evaluatorReader": true,
+            "lineCount": 2
+        },
+        {
+            "id": "markdown58aEb8",
+            "type": "markdown",
+            "body": [
+                "Crie uma função pow3 que recebe um parâmetro x e devolve a multiplicação de x por 2 elevado a x.",
+                "Dica: para calcular potência, você pode fazer (Math/pow num1 num2).",
+                "Cole seu código aqui."
+            ],
+            "evaluatorReader": false
+        },
+        {
+            "id": "codezH3T1F",
+            "type": "code",
+            "evaluator": "Clojure",
+            "input": {
+                "body": [
+                    "(defn pow3 [x] (* x (Math/pow 2 x)))",
+                    "(pow3 2)"
+                ]
+            },
+            "output": {
+                "state": {},
+                "result": 8,
+                "selectedType": "Text",
+                "pluginName": "Clojure",
+                "shellId": "4b8bc2a2-8504-4031-a0b3-796c7b59e577",
+                "elapsedTime": 40,
+                "height": 56
+            },
+            "evaluatorReader": true,
+            "lineCount": 2
+        }
+    ],
+    "namespace": {}
+}
